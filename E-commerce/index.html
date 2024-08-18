@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>ShopEase</h1>
+            <nav>
+                <a href="#carousel">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#featured-products">Featured Products</a>
+                <a href="#offers">Special Offers</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="main-content">
+        <section id="carousel" class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="img1.png" alt="Slide showcasing ShopEase promotions">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img2.png" alt="New arrivals at ShopEase">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img3.png" alt="Seasonal offers at ShopEase">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img4.png" alt="ShopEase exclusive deals">
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="el1.jpeg" alt="Electronics category">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-item">
+                    <img src="cl1.jpeg" alt="Clothing category">
+                    <h3>Clothing</h3>
+                </div>
+                <div class="category-item">
+                    <img src="ha1.jpeg" alt="Home Appliances category">
+                    <h3>Home Appliances</h3>
+                </div>
+                <div class="category-item">
+                    <img src="bo.jpeg" alt="Books category">
+                    <h3>Books</h3>
+                </div>
+                <div class="category-item">
+                    <img src="to.jpeg" alt="Toys category">
+                    <h3>Toys</h3>
+                </div>
+                <div class="category-item">
+                    <img src="sp.jpeg" alt="Sports category">
+                    <h3>Sports</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="products">
+            <h2>Featured Products</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <img src="g1.jpg" alt="Sun-Glasses">
+                    <h3>Sun-Glasses</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Sun-Glasses', 10)">Add to Cart</button>
+                    <button onclick="buyNow('Sun-Glasses', 10)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="sh.jpg" alt="Shoes">
+                    <h3>Shoes</h3>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('Shoes', 15)">Add to Cart</button>
+                    <button onclick="buyNow('Shoes', 15)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="tv.jpg" alt="TWS">
+                    <h3>TWS</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('TWS', 20)">Add to Cart</button>
+                    <button onclick="buyNow('TWS', 20)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="sm.jpg" alt="SmartWatches">
+                    <h3>SmartWatches</h3>
+                    <p>$25.00</p>
+                    <button onclick="addToCart('SmartWatches', 25)">Add to Cart</button>
+                    <button onclick="buyNow('SmartWatches', 25)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="wa.jpg" alt="Wallet">
+                    <h3>Wallet</h3>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Wallet', 30)">Add to Cart</button>
+                    <button onclick="buyNow('Wallet', 30)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="best-sellers" class="products">
+            <h2>Best Sellers</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <img src="ca.jpg" alt="Canon Camera">
+                    <h3>Canon</h3>
+                    <p>$40.00</p>
+                    <button onclick="addToCart('Canon', 40)">Add to Cart</button>
+                    <button onclick="buyNow('Canon', 40)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="mon.jpeg" alt="Monitor">
+                    <h3>Monitor</h3>
+                    <p>$50.00</p>
+                    <button onclick="addToCart('Monitor', 50)">Add to Cart</button>
+                    <button onclick="buyNow('Monitor', 50)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="pc.jpeg" alt="PC Console">
+                    <h3>PC Console</h3>
+                    <p>$60.00</p>
+                    <button onclick="addToCart('PC Console', 60)">Add to Cart</button>
+                    <button onclick="buyNow('PC Console', 60)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="re.jpg" alt="Refrigerator">
+                    <h3>Refrigerator</h3>
+                    <p>$70.00</p>
+                    <button onclick="addToCart('Refrigerator', 70)">Add to Cart</button>
+                    <button onclick="buyNow('Refrigerator', 70)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="ac.jpg" alt="Air Conditioner">
+                    <h3>Air Conditioner</h3>
+                    <p>$80.00</p>
+                    <button onclick="addToCart('Air Conditioner', 80)">Add to Cart</button>
+                    <button onclick="buyNow('Air Conditioner', 80)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-arrivals" class="products">
+            <h2>New Arrivals</h2>
+            <div class="product-slider">
+                <div class="product-item">
+                    <img src="clo.jpeg" alt="Clothes">
+                    <h3>Clothes</h3>
+                    <p>$90.00</p>
+                    <button onclick="addToCart('Clothes', 90)">Add to Cart</button>
+                    <button onclick="buyNow('Clothes', 90)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="la.jpeg" alt="Laptops">
+                    <h3>Laptops</h3>
+                    <p>$100.00</p>
+                    <button onclick="addToCart('Laptops', 100)">Add to Cart</button>
+                    <button onclick="buyNow('Laptops', 100)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="sma.jpeg" alt="SmartPhones">
+                    <h3>SmartPhones</h3>
+                    <p>$110.00</p>
+                    <button onclick="addToCart('SmartPhones', 110)">Add to Cart</button>
+                    <button onclick="buyNow('SmartPhones', 110)">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="ir.jpeg" alt="Iron-Boxes">
+                    <h3>Iron-Boxes</h3>
+                    <p>$130.00</p>
+                    <button onclick="addToCart('Iron-Boxes', 130)">Add to Cart</button>
+                    <button onclick="buyNow('Iron-Boxes', 130)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
